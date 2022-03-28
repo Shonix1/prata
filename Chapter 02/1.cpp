@@ -11,6 +11,7 @@ Write a C++ programm that displays your name and adress
 
 int main()
 {
+    setlocale(LC_ALL, "Rus");
     std::cout << "Name: " << "Renat" << std::endl;
     std::cout << "Adress: " << "67 Windfall St.Lake Zurich, IL 60047" << std::endl;
     system("pause");
