@@ -1,14 +1,22 @@
-#include <iostream>
+/*
+Ќапишите программу на C++, котора€ выдает запрос на ввод 
+рассто€ни€  в фарлонгах и преобразует его в €рды. 
+(ќдин фарлонг равен 220 €рдам, или 201168м.)
 
-using namespace std;
+Write a C++ program that asks for a distance in
+furlongs and converts it to yards. 
+(One furlong is 220 yards.)
+*/
+
+#include <iostream>
 
 
 int main()
 {
-    setlocale(LC_ALL, "Rus");
-    int farlongValue=0;
-    cout<<"¬ведите рассто€ние в фарлонгах: ";
-    cin>>farlongValue;
-    cout<<"–ассто€ние "<<farlongValue<<" фарлонг, будет равно "<<farlongValue*220<<" €рд"<<endl;
+    int farlongValue = 0;
+    std::cout << "Enter the distance in furlongs: ";
+    std::cin >> farlongValue;
+    std::cout << "Distance " << farlongValue << " furlong, equal " << farlongValue * 220 << " yard" << std::endl;
+    system("pause");
     return 0;
 }
